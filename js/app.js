@@ -1,18 +1,13 @@
 
-
 function comprar() {
     let quantidade = parseInt(document.getElementById('qtd').value);
     let ingressos = document.getElementById('tipo-ingresso').value;
 
     if (ingressos == 'pista') {
         comprarPista(quantidade);
-    }
-
-    if (ingressos == 'superior') {
+    } else if (ingressos == 'superior') {
         comprarSuperior(quantidade);
-    }
-
-    if (ingressos == 'inferior') {
+    } else {
         comprarInferior(quantidade);
     }
 }
