@@ -38,13 +38,13 @@ function comprarSuperior(quantidade) {
 }
 
 function comprarInferior(quantidade) {
-    let qtdinferior = parseInt(document.getElementById('qtd-superior').textContent);
+    let qtdInferior = parseInt(document.getElementById('qtd-inferior').textContent);
 
-    if(quantidade > qtdinferior) {
+    if(quantidade > qtdInferior) {
         alert('quantidade indisponível para tido de pista!');
     } else {
-        qtdinferior = qtdinferior - quantidade;
-        document.getElementById('qtd-inferior').textContent = qtdinferior;
+        qtdInferior = qtdInferior - quantidade;
+        document.getElementById('qtd-inferior').textContent = qtdInferior;
         alert('compra realizado com sucesso!')
     }
 }
